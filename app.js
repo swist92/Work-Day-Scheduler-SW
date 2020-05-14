@@ -7,14 +7,15 @@ $(".time-block").each(function () {
   console.log(hour);
 
   if(hour < currentHour){
-    $(this).find("textarea")
+    $(this).find("textarea").addClass("past")
 
   }else if(hour >currentHour){
+    $(this).find("textarea").addClass("future")
       
   }else {
-
-  }
-
+    $(this).find("textarea").addClass("present")
+} 
+  console.log(hour, currentHour);
 });
 
 
