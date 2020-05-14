@@ -16,9 +16,9 @@ body {
   .jumbotron {
     text-align: center;
     background-color: transparent;
-    color: black;
+    color: purple;
     border-radius: 0;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid grey;
   }
   
   .description{
@@ -48,12 +48,12 @@ body {
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: lightgreen;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: pink;
     color: white;
   }
   
@@ -61,7 +61,7 @@ body {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06AED5;
+    background-color: lightblue;
     color: white;
   }
   
