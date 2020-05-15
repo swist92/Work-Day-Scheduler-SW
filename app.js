@@ -18,6 +18,10 @@ $(".time-block").each(function () {
   console.log(hour, currentHour);
 });
 
+$("#text").html("Text");
+localStorage.content = $('#text').html();
+$('#text').(localStorage.content);
+
 
 // const $row = $("<div class='row'>");
 // $(".container").append($row):
@@ -42,7 +46,8 @@ $(".time-block").each(function () {
 
 
 
-// Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+// Create a simple calendar application that allows the user to save events for each hour of the day.
+// This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 // GIVEN I am using a daily planner to create a schedule
 // WHEN I open the planner
 // THEN the current day is displayed at the top of the calendar
