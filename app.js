@@ -36,12 +36,6 @@ $(".saveBtn").on("click", function(){
   
 });
 
-// function render() {
-//     for (let i = 0; i < 24; i++) {
-//         const oneEvent = localStorage.getItem(i);
-//         $("#" + i).text(oneEvent);
-
-
 
 // Create a simple calendar application that allows the user to save events for each hour of the day.
 // This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
