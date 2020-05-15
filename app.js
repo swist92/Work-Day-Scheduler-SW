@@ -1,6 +1,7 @@
 const date = moment().format("dddd, MMMM Do, YYYY");
 $("#currentDay").text(date);
 
+
 $(".time-block").each(function () {
   const currentHour= parseInt(moment().format("H"));
   const hour = parseInt($(this).attr("data-hour"));
@@ -18,9 +19,24 @@ $(".time-block").each(function () {
   console.log(hour, currentHour);
 });
 
-$("#text").html("Text");
-localStorage.content = $('#text').html();
-$('#text').(localStorage.content);
+
+$(".saveBtn").on("click", function(){
+  let time = $(this).siblings('textarea').attr('id');
+  let savedEvent = $(this).siblings('textarea').val();
+  localStorage.setItem(time, savedEvent);
+  
+});
+
+
+$("#9AM").val(localStorage.getItem("9"));
+$("#10AM").val(localStorage.getItem("10"));
+$("#11AM").val(localStorage.getItem("11"));
+$("#12PM").val(localStorage.getItem("12"));
+$("#1PM").val(localStorage.getItem("13"));
+$("#2PM").val(localStorage.getItem("14"));
+$("#3PM").val(localStorage.getItem("15"));
+$("#4PM").val(localStorage.getItem("16"));
+$("#5PM").val(localStorage.getItem("17"));
 
 
 // const $row = $("<div class='row'>");
