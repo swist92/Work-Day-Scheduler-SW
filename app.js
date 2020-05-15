@@ -19,6 +19,15 @@ $(".time-block").each(function () {
   console.log(hour, currentHour);
 });
 
+$("#9AM").val(localStorage.getItem("9AM"));
+$("#10AM").val(localStorage.getItem("10AM"));
+$("#11AM").val(localStorage.getItem("11AM"));
+$("#12PM").val(localStorage.getItem("12PM"));
+$("#1PM").val(localStorage.getItem("1PM"));
+$("#2PM").val(localStorage.getItem("2PM"));
+$("#3PM").val(localStorage.getItem("3PM"));
+$("#4PM").val(localStorage.getItem("4PM"));
+$("#5PM").val(localStorage.getItem("5PM"));
 
 $(".saveBtn").on("click", function(){
   let time = $(this).siblings('textarea').attr('id');
@@ -26,19 +35,6 @@ $(".saveBtn").on("click", function(){
   localStorage.setItem(time, savedEvent);
   
 });
-
-
-$("#9AM").val(localStorage.getItem("9"));
-$("#10AM").val(localStorage.getItem("10"));
-$("#11AM").val(localStorage.getItem("11"));
-$("#12PM").val(localStorage.getItem("12"));
-$("#1PM").val(localStorage.getItem("13"));
-$("#2PM").val(localStorage.getItem("14"));
-$("#3PM").val(localStorage.getItem("15"));
-$("#4PM").val(localStorage.getItem("16"));
-$("#5PM").val(localStorage.getItem("17"));
-
-
 // const $row = $("<div class='row'>");
 // $(".container").append($row):
 
