@@ -1,4 +1,4 @@
-const date = moment().format("dddd, MMMM Do, YYYY");
+const date = moment().format("dddd, MMMM Do, YYYY h:mm A");
 $("#currentDay").text(date);
 
 
@@ -35,26 +35,11 @@ $(".saveBtn").on("click", function(){
   localStorage.setItem(time, savedEvent);
   
 });
-// const $row = $("<div class='row'>");
-// $(".container").append($row):
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function render() {
+//     for (let i = 0; i < 24; i++) {
+//         const oneEvent = localStorage.getItem(i);
+//         $("#" + i).text(oneEvent);
 
 
 
